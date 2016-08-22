@@ -1,9 +1,8 @@
-rem @echo off
+@echo off
 
-rem Backupscript for databases on GOF-server
-rem Uses MariaDB, mysqldump and 7-Zip
-
-rem 2016-18-20/SDAA
+rem Backupscript for databases that use MariaDB.
+rem Uses mysqldump and 7-Zip.
+rem 2016-08-20/SDAA
 
 rem Set variables for backup
 
@@ -13,8 +12,9 @@ set $ZIP="C:\Program Files\7-zip\7z.exe"
 set $DIR=C:\local\data
 set $USER=root
 rem Prompt for password
-set /p $PASSWD=[Please insert password for user root: ] || set $PASSWD=NothingChosen
+set /p "$PASSWD=[Please insert password for user root: ]" || set $PASSWD=NothingChosen
 if "%$PASSWD%"=="NothingChosen" goto sub_passwd
+echo %$PASSWD%
 
 rem Set date
 set $Day=%Date:~8,2%
@@ -43,10 +43,15 @@ echo Backup in file "%$FILE%"
 
 echo Compressing
 echo %$ZIP% -sdel a "%$FILE%.7z" "%$FILE%"
-
+echo Compressed Backup in file "%$FILE%"
+if %ERRORLEVEL%==1 goto sub_zip
 goto eof
 
 :sub_passwd
 echo You must provide a password
+goto eof
+
+:sub_zip
+echo No 7-zip detected or error compressing file
 
 :eof
