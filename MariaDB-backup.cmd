@@ -38,6 +38,7 @@ set $FILE=%$DIR%\mariadb-backup-%$Datum%-%$Tid%.sql
 rem mysqldump has --opt as default option
 echo Do the backup
 echo %$BKPCMD% --user=%$USER% --password=%$PASSWD% --all-databases --add-drop-database>"%$FILE%"
+if %ERRORLEVEL%==1 goto sub_db
 echo Done!
 echo Backup in file "%$FILE%"
 
@@ -49,6 +50,10 @@ goto eof
 
 :sub_passwd
 echo You must provide a password
+goto eof
+
+:sub_db
+echo Backup failed!!!!!!!
 goto eof
 
 :sub_zip
