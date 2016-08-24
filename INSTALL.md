@@ -8,3 +8,12 @@ https://downloads.mariadb.org/
 
 NTP
 https://www.meinbergglobal.com/english/sw/ntp.htm#ntp_stable
+
+MeOS
+http://www.melin.nu/meos/sv/download.php
+
+Java
+http://java.com/sv/download/manual.jsp
+
+Sportident
+https://www.sportident.com/products.html#software
