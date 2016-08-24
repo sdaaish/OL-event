@@ -32,7 +32,7 @@ for /L %%i in (11,1,17) do ping -n 3 -w 300 192.168.1.%%i
 rem Börja om igen, låt detta fönster snurra
 echo > NUL
 echo Done!
-echo Restarting ping.....
-sleep 5
+echo Restarting ping, sleep for a while.....
+ping -n 5 ::1 > NUL
 goto begin
 
