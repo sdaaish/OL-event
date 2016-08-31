@@ -7,6 +7,7 @@ rem 2016-08-20/SDAA
 rem Set variables for backup
 
 rem Change settings for user, password, directory and possible path to EXE-file.
+setlocal
 set $BKPCMD="C:\Program Files\MariaDB 10.1\bin\mysqldump.exe"
 set $ZIP="C:\Program Files\7-zip\7z.exe"
 set $DIR=C:\local\data
@@ -60,3 +61,4 @@ goto eof
 echo No 7-zip detected or error compressing file
 
 :eof
+endlocal
