@@ -66,6 +66,7 @@ goto begin
 
 :: ### End of main ###
 
+:: ### Start of subs ###
 :: No passwd given
 :sub_passwd
 echo You must provide a password
@@ -100,6 +101,8 @@ set $Sekund=%Time:~6,2%
 set $Tid=%$Timma%%$Minut%%$Sekund%
 ::echo %$Tid%
 exit /b
+
+:: ### End of subs ###
 
 :eof
 endlocal
