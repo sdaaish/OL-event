@@ -1,64 +1,105 @@
 @echo off
 
-rem Backupscript for databases that use MariaDB.
-rem Uses mysqldump and 7-Zip.
-rem 2016-08-20/SDAA
+:: Backupscript for databases that use MariaDB.
+:: Uses mysqldump and 7-Zip.
+:: 2016-08-20/SDAA
 
-rem Set variables for backup
-
-rem Change settings for user, password, directory and possible path to EXE-file.
+:: Set variables for backup
+:: Change settings for user, password, directory and possible path to EXE-file.
+:: If you use another compressing program, change ZIPOPT and ZIPEXT to.
 setlocal
 set $BKPCMD="C:\Program Files\MariaDB 10.1\bin\mysqldump.exe"
 set $ZIP="C:\Program Files\7-zip\7z.exe"
+set $ZIPOPT=-sdel a
+set $ZIPEXT=.7z
 set $DIR=C:\local\data
 set $USER=root
-rem Prompt for password
+set $TIMEOUT=10
+
+
+:: ### Start of program ###
+:main
+
+::Welcome text
+cls
+echo This program backups the MariaDB and puts the files in %$DIR%.
+echo You need to provide a password for the DB-account used.
+echo The program will run until it is stopped with CTRL-C
+echo: 
+
+:: Prompt for password
 set /p "$PASSWD=[Please insert password for user root: ]" || set $PASSWD=NothingChosen
 if "%$PASSWD%"=="NothingChosen" goto sub_passwd
-echo %$PASSWD%
+:: echo %$PASSWD%
 
-rem Set date
+:: Create the destination directory
+mkdir %$DIR% 2>NUL
+cd %$DIR%
+
+:begin
+call :sub_time
+
+:: Set filename to directory with date and time in name.
+set $FILE=%$DIR%\mariadb-backup-%$Datum%-%$Tid%.sql
+set $ZIPFILE=%$FILE%%$ZIPEXT%
+::echo The file %$FILE%
+
+:: mysqldump has --opt as default option
+echo:
+echo Do the DB-backup.
+echo %$BKPCMD% --user=%$USER% --password=%$PASSWD% --all-databases --add-drop-database>"%$FILE%"
+if %ERRORLEVEL%==1 goto sub_db
+echo Done!
+echo Backup in file %$FILE%
+echo:
+
+:: Compress the file
+echo Compressing
+%$ZIP% %$ZIPOPT% %$ZIPFILE% %$FILE% >NUL
+if not %ERRORLEVEL%==0 call :sub_zip
+echo Compressed Backup in file %$ZIPFILE%
+
+:: Loop the script after %$TIMEOUT% seconds
+echo Sleeping for %$TIMEOUT% seconds.
+ping -n %$TIMEOUT% 127.0.0.1 >NUL
+goto begin
+
+:: ### End of main ###
+
+:: No passwd given
+:sub_passwd
+echo You must provide a password
+goto eof
+
+:: If the backup failed
+:sub_db
+echo Backup failed!!!!!!!
+goto eof
+
+:: If z-zip is not installed
+:sub_zip
+echo No 7-zip detected or error compressing file.
+echo The file remains uncompressed
+exit /b
+
+:sub_time
+:: Set date
 set $Day=%Date:~8,2%
 set $Mth=%Date:~5,2%
 set $Year=%Date:~0,4%
 set $Datum=%$Year%%$Mth%%$Day%
 
-rem Set time
+:: Set time
 set $Timma=%Time:~0,2%
+:: Strip spaces from timma, if any
+set $Timma=%$Timma: =%
+:: Ensure the hours have a leading zero
+if 1%$Timma% LSS 20 Set $Timma=0%$Timma%
 set $Minut=%Time:~3,2%
 set $Sekund=%Time:~6,2%
 set $Tid=%$Timma%%$Minut%%$Sekund%
-
-rem Create the destination directory
-mkdir %$DIR% 2>NUL
-cd %$DIR%
-
-rem Set filename to directory with date and time in name.
-set $FILE=%$DIR%\mariadb-backup-%$Datum%-%$Tid%.sql
-
-rem mysqldump has --opt as default option
-echo Do the backup
-echo %$BKPCMD% --user=%$USER% --password=%$PASSWD% --all-databases --add-drop-database>"%$FILE%"
-if %ERRORLEVEL%==1 goto sub_db
-echo Done!
-echo Backup in file "%$FILE%"
-
-echo Compressing
-echo %$ZIP% -sdel a "%$FILE%.7z" "%$FILE%"
-echo Compressed Backup in file "%$FILE%"
-if %ERRORLEVEL%==1 goto sub_zip
-goto eof
-
-:sub_passwd
-echo You must provide a password
-goto eof
-
-:sub_db
-echo Backup failed!!!!!!!
-goto eof
-
-:sub_zip
-echo No 7-zip detected or error compressing file
+::echo %$Tid%
+exit /b
 
 :eof
 endlocal
