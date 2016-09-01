@@ -14,7 +14,7 @@ set $ZIPOPT=-sdel a
 set $ZIPEXT=.7z
 set $DIR=C:\local\data
 set $USER=root
-set $TIMEOUT=10
+set $TIMEOUT=300
 
 
 :: ### Start of program ###
@@ -24,7 +24,7 @@ set $TIMEOUT=10
 cls
 echo This program backups the MariaDB and puts the files in %$DIR%.
 echo You need to provide a password for the DB-account used.
-echo The program will run until it is stopped with CTRL-C
+echo The program will run until it is stopped with CTRL-C.
 echo: 
 
 :: Prompt for password
@@ -47,7 +47,7 @@ set $ZIPFILE=%$FILE%%$ZIPEXT%
 :: mysqldump has --opt as default option
 echo:
 echo Do the DB-backup.
-echo %$BKPCMD% --user=%$USER% --password=%$PASSWD% --all-databases --add-drop-database>"%$FILE%"
+%$BKPCMD% --user=%$USER% --password=%$PASSWD% --all-databases --add-drop-database>"%$FILE%"
 if %ERRORLEVEL%==1 goto sub_db
 echo Done!
 echo Backup in file %$FILE%
