@@ -14,8 +14,6 @@ set $ZIPOPT=-sdel a
 set $ZIPEXT=.7z
 set $DIR=C:\local\data
 set $USER=root
-set $TIMEOUT=300
-
 
 :: ### Start of program ###
 :main
@@ -31,6 +29,10 @@ echo:
 set /p "$PASSWD=[Please insert password for user root: ]" || set $PASSWD=NothingChosen
 if "%$PASSWD%"=="NothingChosen" goto sub_passwd
 :: echo %$PASSWD%
+
+:: Prompt for backup interval
+set /p "$INTERVAL=[Please insert backup interval in minutes: ]" || set /a "$INTERVAL=0"
+call :sub_interval
 
 :: Create the destination directory
 mkdir %$DIR% 2>NUL
@@ -59,9 +61,9 @@ echo Compressing
 if not %ERRORLEVEL%==0 call :sub_zip
 echo Compressed Backup in file %$ZIPFILE%
 
-:: Loop the script after %$TIMEOUT% seconds
-echo Sleeping for %$TIMEOUT% seconds.
-ping -n %$TIMEOUT% 127.0.0.1 >NUL
+:: Loop the script after %$INTERVAL% seconds
+echo Sleeping for %$INTERVAL% seconds.
+ping -n %$INTERVAL% 127.0.0.1 >NUL
 goto begin
 
 :: ### End of main ###
@@ -100,6 +102,21 @@ set $Minut=%Time:~3,2%
 set $Sekund=%Time:~6,2%
 set $Tid=%$Timma%%$Minut%%$Sekund%
 ::echo %$Tid%
+exit /b
+
+:sub_interval
+:: Set backup interval, multiply with 60s
+set /a "$INTERVAL*=60"
+:: If numeric is zero, use default
+if %$INTERVAL% lss 1 (
+   	 set /a "$INTERVAL=300"
+         echo Using default, 5 minutes.
+   )
+:: If not a number, use default
+if %$INTERVAL%==0 (
+      set /a "$INTERVAL=300"
+      echo Using default, 5 minutes.
+   )
 exit /b
 
 :: ### End of subs ###
