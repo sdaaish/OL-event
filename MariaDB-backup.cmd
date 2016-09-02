@@ -85,6 +85,7 @@ echo No 7-zip detected or error compressing file.
 echo The file remains uncompressed
 exit /b
 
+:: Date/Time setting
 :sub_time
 :: Set date
 set $Day=%Date:~8,2%
@@ -104,8 +105,9 @@ set $Tid=%$Timma%%$Minut%%$Sekund%
 ::echo %$Tid%
 exit /b
 
+:: set time for backups
 :sub_interval
-:: Set backup interval, multiply with 60s
+:: Set backup interval in seconds, multiply input with 60
 set /a "$INTERVAL*=60"
 :: If numeric is zero, use default
 if %$INTERVAL% lss 1 (
