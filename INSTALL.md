@@ -1,25 +1,25 @@
-Files to install that are useful to OL-events.
+## Files to install that are useful to OL-events.
 
-7-Zip
+- 7-Zip
 http://www.7-zip.org/download.html
 
-MariaDB
+- MariaDB
 https://downloads.mariadb.org/
 
-NTP
+- NTP
 https://www.meinbergglobal.com/english/sw/ntp.htm#ntp_stable
 
-MeOS
+- MeOS
 http://www.melin.nu/meos/sv/download.php
 
-OLA
+- OLA
 https://eventor.orientering.se/EventAdmin/Ola
 
-Java
+- Java
 http://java.com/sv/download/manual.jsp
 
-Sportident
+- Sportident
 https://www.sportident.com/products.html#software
 
-OLResultat (ROC)
+- OLResultat (ROC)
 http://olresultat.se/blog/?page_id=399
