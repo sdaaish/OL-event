@@ -24,10 +24,19 @@ echo Aktuellt datum: %$Datum% och tid: %$Tid%
 
 :: pingar Gof-datorer i nätet
 :: Kolla att localhost och gateway fungerar
-for %%i in (localhost 192.168.1.1) do ping -n 3 -w 300 -l 128 %%i| findstr /i /v  "statistics approx minimum"
+for %%i in (localhost 192.168.1.1) do (
+    echo Pinging host=%%i
+    ping -n 3 -w 300 -l 128 %%i| findstr /i /v  "statistics approx minimum"
+)
 
+setlocal
 :: Kolla de olika Gofarna
-for /L %%i in (11,1,17) do ping -n 3 -w 300 -l 128 192.168.1.%%i| findstr /i /v  "statistics approx minimum"
+for /L %%i in (11,1,17) do (
+    set _host=192.168.1.%%i
+    echo Pinging host=%_host%
+    ping -n 3 -w 300 -l 128 %_host% | findstr /i /v  "statistics approx minimum"
+)
+endlocal
 
 :: Börja om igen, låt detta fönster snurra
 echo > NUL
