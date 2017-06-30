@@ -10,7 +10,7 @@
 
 
 	.NOTES
-  Note completely working at the moment.
+  Not completely working at the moment.
 
 	.LINK
 
