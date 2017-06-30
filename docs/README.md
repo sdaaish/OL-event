@@ -8,3 +8,4 @@ Kanske ska välja språk för repot....
 
 ### Links
 [Files](https://github.com/sdaaish/OLA/)
+[Installation](https://github.com/sdaaish/OLA/blob/master/INSTALL.md)

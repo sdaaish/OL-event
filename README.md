@@ -23,11 +23,11 @@ You can load the dump file back into the server like this:
 
 ### backup all databases in one file (eventually add the option --add-locks):
 
-    mysqldump -u username -p -–all-databases > file.sql
+    mysqldump -u username -p -all-databases > file.sql
 
 ### backup all databases in one gzipped file:
 
-    mysqldump -u username -p -–all-databases | gzip > file.sql.gz
+    mysqldump -u username -p -all-databases | gzip > file.sql.gz
 
 ### restore all databases:
 
