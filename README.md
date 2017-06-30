@@ -4,8 +4,12 @@
 - Config for NTP
 - For utilities regarding OL events, OLA and MeOS see INSTALL.md
 
+### MariaDB-backup.cmd
+Takes a backup of a MariaDB with regular intervals.
+https://github.com/sdaaish/OLA/blob/master/MariaDB-backup.cmd
 
 ## Backup and restore tips
+
 ### Making a Copy of a Database
 
     shell> mysqldump db1 > dump.sql
