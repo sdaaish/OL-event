@@ -7,11 +7,10 @@
 
 ## Backup and restore tips
 ### Making a Copy of a Database
-```
-shell> mysqldump db1 > dump.sql
-shell> mysqladmin create db2
-shell> mysql db2 < dump.sql
-```
+
+    shell> mysqldump db1 > dump.sql
+    shell> mysqladmin create db2
+    shell> mysql db2 < dump.sql
 
 You can load the dump file back into the server like this:
 
