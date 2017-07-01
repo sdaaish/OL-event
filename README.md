@@ -2,11 +2,11 @@
 - Backup of MariaDB/MySQL-database.
 - Ping-checker for connectivity testing/verifying.
 - Config for NTP
-- For utilities regarding OL events, OLA and MeOS see INSTALL.md
+- For utilities regarding OL events, OLA and MeOS see [INSTALL](INSTALL.md)
 
 ### MariaDB-backup.cmd
 Takes a backup of a MariaDB with regular intervals.
-https://github.com/sdaaish/OLA/blob/master/MariaDB-backup.cmd
+https://github.com/sdaaish/OL-event/blob/master/MariaDB-backup.cmd
 
 ## Backup and restore tips
 

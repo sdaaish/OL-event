@@ -41,3 +41,4 @@ forEach($row in $data){
 }
 
 $table| Select-String  -Pattern "got" 
+$table| Select-String  -Pattern "^vok" 
