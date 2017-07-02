@@ -1,8 +1,10 @@
+
 ## Utilities for MeOS, OLA and Eventor, used for orienteering.
 - Backup of MariaDB/MySQL-database.
 - Ping-checker for connectivity testing/verifying.
 - Config for NTP
 - For utilities regarding OL events, OLA and MeOS see [INSTALL](INSTALL.md)
+- To download the files, see https://github.com/sdaaish/OL-event/releases
 
 ### MariaDB-backup.cmd
 Takes a backup of a MariaDB with regular intervals.
