@@ -31,17 +31,20 @@ for %%i in (localhost 192.168.1.1) do (
 
 setlocal
 :: Kolla de olika Gofarna
-for /L %%i in (11,1,17) do (
-    set _host=192.168.1.%%i
-    echo Pinging host=%_host%
-    ping -n 3 -w 300 -l 128 %_host% | findstr /i /v  "statistics approx minimum"
-)
+for /L %%i in (11,1,17) do (call :pingloop %%i)
 endlocal
+goto rerun
 
+:pingloop
+set $host=192.168.1.%1
+echo Pinging host %$host%
+ping -n 3 -w 300 -l 128 %$host% | findstr /i /v  "statistics approx minimum"
+exit /b
+
+:rerun
 :: Börja om igen, låt detta fönster snurra
 echo > NUL
 echo Done!
 echo Restarting ping, sleep for a while.....
 ping -n 5 ::1 > NUL
 goto begin
-
