@@ -1,6 +1,6 @@
 #
 # Comments starts with #
-# Add all addresses that the file pingsnurra should ping.
+# Add all addresses that the file PINGLOOP.CMD should ping.
 #
 192.168.1.1
 192.168.1.11
