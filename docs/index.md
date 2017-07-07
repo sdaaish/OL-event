@@ -2,12 +2,12 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org2a1497b">1. Beskrivning</a>
+<li><a href="#org3efca18">1. Beskrivning</a>
 <ul>
-<li><a href="#org289f3ed">1.1. Todo</a></li>
-<li><a href="#orgd2b4d16">1.2. info</a></li>
-<li><a href="#orgf26b34d">1.3. Checklistor</a></li>
-<li><a href="#org42cc46c">1.4. Links</a></li>
+<li><a href="#orgdb9b822">1.1. Todo</a></li>
+<li><a href="#org479c8f7">1.2. info</a></li>
+<li><a href="#orga021fba">1.3. Checklistor</a></li>
+<li><a href="#org4fe7844">1.4. Links</a></li>
 </ul>
 </li>
 </ul>
@@ -18,7 +18,7 @@
 </div>
 
 
-<a id="org2a1497b"></a>
+<a id="org3efca18"></a>
 
 # Beskrivning
 
@@ -27,21 +27,21 @@ Detta är ett repo som innehåller saker kring hantering av orienteringstävling
 Repot heter **OL-event** och är avsett för både OLA, MeOS m fl.
 
 
-<a id="org289f3ed"></a>
+<a id="orgdb9b822"></a>
 
 ## Todo
 
 Kanske ska välja språk för repot&#x2026;.
 
 
-<a id="orgd2b4d16"></a>
+<a id="org479c8f7"></a>
 
 ## info
 
 [Saker, bra att ha med.](./saker.md)
 
 
-<a id="orgf26b34d"></a>
+<a id="orga021fba"></a>
 
 ## Checklistor
 
@@ -52,7 +52,7 @@ Kanske ska välja språk för repot&#x2026;.
 [Checklista starten](./checklista-start.md)
 
 
-<a id="org42cc46c"></a>
+<a id="org4fe7844"></a>
 
 ## Links
 
