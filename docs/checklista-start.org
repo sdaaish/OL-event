@@ -1,0 +1,62 @@
+#+TITLE: Checklista för starten.
+#+DATE: <2017-07-07 fre>
+#+AUTHOR: Stig Dahl
+#+EMAIL: stig@charlottendal.net
+#+BEGIN_OPTIONS
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t broken-links:nil c:nil creator:nil
+#+OPTIONS: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+OPTIONS: timestamp:t title:t toc:t todo:t |:t
+#+LANGUAGE: sv
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.1.1 (Org mode 9.0.9)
+#+OPTIONS: html-link-use-abs-url:nil html-postamble:auto
+#+OPTIONS: html-preamble:t html-scripts:t html-style:t
+#+OPTIONS: html5-fancy:nil tex:t
+#+HTML_DOCTYPE: xhtml-strict
+#+HTML_CONTAINER: div
+#+DESCRIPTION:
+#+KEYWORDS: Orientering OL-event Tävlingsadministration
+#+HTML_LINK_HOME:
+#+HTML_LINK_UP:
+#+HTML_MATHJAX:
+#+HTML_HEAD:
+#+HTML_HEAD_EXTRA:
+#+SUBTITLE: En checklista för starten vid orienteringstävling, OL-event.
+#+INFOJS_OPT:
+#+CREATOR: <a href="http://www.gnu.org/software/emacs/">Emacs</a> 25.1.1 (<a href="http://orgmode.org">Org</a> mode 9.0.9)
+#+LATEX_HEADER:
+#+END_OPTIONS
+
+** Förberedelser
+
+*** Saker att ha vid start
+- 1 Start-dosa för öppna banor.
+- 1 Clear-dosa samt 1 Check för samtliga utanför start.
+- 1 Clear vid ingång för intervallstart.
+- 1 Start-enhet som reserv.
+
+För samtliga kan man använda Master-enheter istället, om de är kopplade till en Roc. På så sätt får man check och start direkt in i OLA. Detta underlättar då man har koll på vilka löpare som är kvar i skogen.
+Har man begränsat med Master-enheter så är 1 för Check och 1 för Start mest praktiskt.
+
+*** Utrustning
+Vid starten ska finnas följande:
+- Startlista
+- Minutlista
+- Linjal
+- Penna för markering av löpare
+- Skrivare och dator för kartor till direktanmälan
+- Sportidentbrickor för folk som glömt
+
+*** ROC
+Om man har en ROC vid start så ska den vara testad innan och enheterna anslutna och testade. Man kan använda fler enheter till samma ROC, kabellängden avgör.
+Programmera enheterna med unika nummer och den funktion de ska ha (Start, Check, Kontroll etc), så att man kan härleda i OLA vilken enhet som löparen varit vid.
+
+*** Efterarbete
+Starten ska pricka av alla löpare som går in i fållan för intervallstart. Denna lista (minutlistan) skall efter att alla ha startat lämnas tillbaks till sekretariatet så att man kan rensa löpare som inte startat (Kvar i skogen).
+
+[[https://sdaaish.github.io/OL-event/index.html][Start]]
+[[./index.md][Start2]]
+[[./README.md][Start3]]

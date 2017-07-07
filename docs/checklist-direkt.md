@@ -2,11 +2,11 @@
 <h2>Inneh&aring;ll</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgcc2a60b">1. Föreberedelser</a></li>
-<li><a href="#org1f4319c">2. Tips</a>
+<li><a href="#org2041a6a">1. Föreberedelser</a></li>
+<li><a href="#org4cc8169">2. Tips</a>
 <ul>
-<li><a href="#org3a57605">2.1. Masterenhet</a></li>
-<li><a href="#org3a4769b">2.2. Tält</a></li>
+<li><a href="#org726b32f">2.1. Masterenhet</a></li>
+<li><a href="#org4a18159">2.2. Tält</a></li>
 </ul>
 </li>
 </ul>
@@ -17,7 +17,7 @@
 </div>
 
 
-<a id="orgcc2a60b"></a>
+<a id="org2041a6a"></a>
 
 # Föreberedelser
 
@@ -37,19 +37,19 @@
 -   Definitioner
 
 
-<a id="org1f4319c"></a>
+<a id="org4cc8169"></a>
 
 # Tips
 
 
-<a id="org3a57605"></a>
+<a id="org726b32f"></a>
 
 ## Masterenhet
 
 En Master-enhet bör vara programmerad som Mål för att kunna läsa av brickor enklast/snabbast. Alternativt ReadOut, men detta kan krångla ibland.
 
 
-<a id="org3a4769b"></a>
+<a id="org4a18159"></a>
 
 ## Tält
 

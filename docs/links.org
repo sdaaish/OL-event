@@ -2,6 +2,7 @@
 #+DATE: <2017-07-07 fre>
 #+AUTHOR: Stig Dahl
 #+EMAIL: stig@charlottendal.net
+#+BEGIN_OPTIONS
 #+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
 #+OPTIONS: author:t broken-links:nil c:nil creator:nil
 #+OPTIONS: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
@@ -11,17 +12,31 @@
 #+SELECT_TAGS: export
 #+EXCLUDE_TAGS: noexport
 #+CREATOR: Emacs 25.1.1 (Org mode 9.0.9)
-
+#+END_OPTIONS
 ** Tävlingsinfo
 [[https://eventor.orientering.se/][Eventor]]
 [[https://liveorienteering.com/][IOF Live-sida]]
 [[http://live.orientering.se/][Live-resultat]]
-[[http://www.svenskorientering.se/][Svensk orientering hemsida]]
+[[https://www.livelox.com/][Livelox]]
+[[http://olresultat.se/blog/][OL-resultat (ROC)]]
+[[http://roc.olresultat.se/ver6.5/roc.asp?ActiveMenu=ROC_list&language=svenska][ROC-info]]
+*** Program
+[[https://eventor.orientering.se/EventAdmin/Ola][OLA]]
+[[http://melin.nu/meos/sv/][MeOS]]
+[[http://purplepen.golde.org/][Purple Pen]]
+[[https://www.ocad.com/en/][OCAD]]
+[[https://www.sportident.com/][Sportident]]
+[[https://www.sportident.com/products.html#software][Sportident Config+]]
+*** Utrustning
+[[http://sportident.se/][SportIdent (Sverige)]]
 ** Orienteringsinfo
 [[https://www.orientering.se/][Orientering.se]]
+[[http://www.svenskorientering.se/][Svensk orientering hemsida]]
+[[http://oringen.se/][Oringen]]
 [[http://worldofo.com/][World of O]]
 ** Klubbar
 [[http://www1.visborgsok.se/][Visborgs OK]]
 ** Distrikt
 [[http://www.svenskorientering.se/Distrikt/gotlandsorienteringsforbund/][Gotlands OF]]
 
+[[https://sdaaish.github.io/OL-event/index.html][Start]]
