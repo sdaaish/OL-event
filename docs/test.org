@@ -6,4 +6,5 @@ Some text
 #+BEGIN_QUOTE
 Some qouted text
 #+END_QUOTE
-Inserting a link [[./index.html][Index]]
+Inserting a link
+[[./index.html][Index]]
