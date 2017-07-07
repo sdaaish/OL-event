@@ -30,7 +30,14 @@
 #+END_OPTIONS
 * the title
 ** the subtitle
+This is another file.
 Some text
 Some options
+| Number | Header    |
+|--------+-----------|
+|      1 | text      |
+|      2 | more text |
+|      3 | also text |
+
 [[./index.html][Start]]
 [[./about.html][About]]
