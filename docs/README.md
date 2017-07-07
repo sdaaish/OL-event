@@ -13,4 +13,4 @@ Kanske ska välja språk för repot....
 - [Files](https://github.com/sdaaish/OL-event/)
 - [Installation](https://github.com/sdaaish/OL-event/blob/master/INSTALL.md)
 
-[About this site](./about.html "About")
+[About this site](https://github.com/sdaaish/OL-event/about.html "About")
