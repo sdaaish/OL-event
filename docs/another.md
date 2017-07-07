@@ -2,9 +2,9 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org1ede266">1. the title</a>
+<li><a href="#org862eb62">1. the title</a>
 <ul>
-<li><a href="#orge90434b">1.1. the subtitle</a></li>
+<li><a href="#org95834ed">1.1. the subtitle</a></li>
 </ul>
 </li>
 </ul>
@@ -15,12 +15,12 @@
 </div>
 
 
-<a id="org1ede266"></a>
+<a id="org862eb62"></a>
 
 # the title
 
 
-<a id="orge90434b"></a>
+<a id="org95834ed"></a>
 
 ## the subtitle
 
@@ -63,6 +63,6 @@ Some options
 </tbody>
 </table>
 
-[Start](./index.html)
-[About](./about.html)
+[Start](https://sdaaish.github.io/OL-event/index.html)
+[About](https://sdaaish.github.io/OL-event/about.html)
 

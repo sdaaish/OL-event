@@ -39,5 +39,5 @@ Some options
 |      2 | more text |
 |      3 | also text |
 
-[[https://github.com/sdaaish/OL-event/index.html][Start]]
-[[https://github.com/sdaaish/OL-event/about.html][About]]
+[[https://sdaaish.github.io/OL-event/index.html][Start]]
+[[https://sdaaish.github.io/OL-event/about.html][About]]

@@ -7,4 +7,4 @@ Some text
 Some qouted text
 #+END_QUOTE
 Inserting a link
-[[https://github.com/sdaaish/OL-event/index.html][Index]]
+[[https://sdaaish.github.io/OL-event/index.html][Index]]
