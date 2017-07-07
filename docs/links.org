@@ -1,0 +1,27 @@
+#+TITLE: Användbara länkar
+#+DATE: <2017-07-07 fre>
+#+AUTHOR: Stig Dahl
+#+EMAIL: stig@charlottendal.net
+#+OPTIONS: ':nil *:t -:t ::t <:t H:3 \n:nil ^:t arch:headline
+#+OPTIONS: author:t broken-links:nil c:nil creator:nil
+#+OPTIONS: d:(not "LOGBOOK") date:t e:t email:nil f:t inline:t num:t
+#+OPTIONS: p:nil pri:nil prop:nil stat:t tags:t tasks:t tex:t
+#+OPTIONS: timestamp:t title:t toc:t todo:t |:t
+#+LANGUAGE: sv
+#+SELECT_TAGS: export
+#+EXCLUDE_TAGS: noexport
+#+CREATOR: Emacs 25.1.1 (Org mode 9.0.9)
+
+** Tävlingsinfo
+[[https://eventor.orientering.se/][Eventor]]
+[[https://liveorienteering.com/][IOF Live-sida]]
+[[http://live.orientering.se/][Live-resultat]]
+[[http://www.svenskorientering.se/][Svensk orientering hemsida]]
+** Orienteringsinfo
+[[https://www.orientering.se/][Orientering.se]]
+[[http://worldofo.com/][World of O]]
+** Klubbar
+[[http://www1.visborgsok.se/][Visborgs OK]]
+** Distrikt
+[[http://www.svenskorientering.se/Distrikt/gotlandsorienteringsforbund/][Gotlands OF]]
+
