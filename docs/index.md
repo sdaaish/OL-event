@@ -2,11 +2,12 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgdbb7552">1. Beskrivning</a>
+<li><a href="#orga46ab75">1. Beskrivning</a>
 <ul>
-<li><a href="#orgc045657">1.1. Todo</a></li>
-<li><a href="#orgde8869b">1.2. info</a></li>
-<li><a href="#orgd8a2f72">1.3. Links</a></li>
+<li><a href="#org797a9b6">1.1. Todo</a></li>
+<li><a href="#org285069a">1.2. info</a></li>
+<li><a href="#org6357943">1.3. Checklistor</a></li>
+<li><a href="#org14cf8cc">1.4. Links</a></li>
 </ul>
 </li>
 </ul>
@@ -17,7 +18,7 @@
 </div>
 
 
-<a id="orgdbb7552"></a>
+<a id="orga46ab75"></a>
 
 # Beskrivning
 
@@ -26,26 +27,35 @@ Detta är ett repo som innehåller saker kring hantering av orienteringstävling
 Repot heter \`\`\`OL-event\`\`\` och är avsett för både OLA, MeOS m fl.
 
 
-<a id="orgc045657"></a>
+<a id="org797a9b6"></a>
 
 ## Todo
 
 Kanske ska välja språk för repot&#x2026;.
 
 
-<a id="orgde8869b"></a>
+<a id="org285069a"></a>
 
 ## info
 
 [Saker, bra att ha med.](./saker.md)
 
 
-<a id="orgd8a2f72"></a>
+<a id="org6357943"></a>
+
+## Checklistor
+
+[Checklista direktanmälan](./checklist-direkt.md)
+[Checklista målet](./checklist-mal.md)
+[Checklista starten](./checklista-start.md)
+
+
+<a id="org14cf8cc"></a>
 
 ## Links
 
 -   [Files](https://github.com/sdaaish/OL-event/)
 -   [Installation](https://github.com/sdaaish/OL-event/blob/master/INSTALL.md)
 
-[About this site](https://sdaaish.github.io/OL-event/about.html)
+[About this site](./about.md)
 

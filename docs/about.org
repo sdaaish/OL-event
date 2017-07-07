@@ -1,4 +1,4 @@
-#+TITLE: OL-Event
+#+TITLE: Om denna sajt
 #+DATE: <2017-07-07 fre>
 #+AUTHOR: Stig Dahl
 #+EMAIL: stig@charlottendal.net
@@ -30,23 +30,6 @@
 #+LATEX_HEADER:
 #+END_OPTIONS
 
-** Beskrivning
-Detta är ett repo som innehåller saker kring hantering av orienteringstävlingar. Diverse skript mm som kan var användbart i sekretariatet.
-
-Repot heter ```OL-event``` och är avsett för både OLA, MeOS m fl.
-
-*** Todo
-Kanske ska välja språk för repot....
-
-*** info
-[[./saker.md][Saker, bra att ha med.]]
-
-*** Checklistor
-[[./checklist-direkt.md][Checklista direktanmälan]]
-[[./checklist-mal.md][Checklista målet]]
-[[./checklista-start.md][Checklista starten]]
-*** Links
-- [[https://github.com/sdaaish/OL-event/][Files]]
-- [[https://github.com/sdaaish/OL-event/blob/master/INSTALL.md][Installation]]
-
-[[./about.md][About this site]]
+* About this site
+Saker som är bra att veta för orienteringstävlingar.
+[[./index.md][Start]]

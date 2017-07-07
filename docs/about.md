@@ -2,7 +2,7 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org9641065">1. About this site</a></li>
+<li><a href="#orga788151">1. About this site</a></li>
 </ul>
 </div>
 </div>
@@ -11,7 +11,7 @@
 </div>
 
 
-<a id="org9641065"></a>
+<a id="orga788151"></a>
 
 # About this site
 
