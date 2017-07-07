@@ -2,12 +2,12 @@
 <h2>Inneh&aring;ll</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org409d4b7">1. Förberedelser</a>
+<li><a href="#orgcdf57a1">1. Förberedelser</a>
 <ul>
-<li><a href="#org622c662">1.1. Saker att ha vid start</a></li>
-<li><a href="#org175463f">1.2. Utrustning</a></li>
-<li><a href="#org79febe7">1.3. ROC</a></li>
-<li><a href="#org4183c6c">1.4. Efterarbete</a></li>
+<li><a href="#org82bf680">1.1. Saker att ha vid start</a></li>
+<li><a href="#org78de6b8">1.2. Utrustning</a></li>
+<li><a href="#org5259c2d">1.3. ROC</a></li>
+<li><a href="#orgae6ecc9">1.4. Efterarbete</a></li>
 </ul>
 </li>
 </ul>
@@ -18,12 +18,12 @@
 </div>
 
 
-<a id="org409d4b7"></a>
+<a id="orgcdf57a1"></a>
 
 # Förberedelser
 
 
-<a id="org622c662"></a>
+<a id="org82bf680"></a>
 
 ## Saker att ha vid start
 
@@ -36,7 +36,7 @@ För samtliga kan man använda Master-enheter istället, om de är kopplade till
 Har man begränsat med Master-enheter så är 1 för Check och 1 för Start mest praktiskt.
 
 
-<a id="org175463f"></a>
+<a id="org78de6b8"></a>
 
 ## Utrustning
 
@@ -50,7 +50,7 @@ Vid starten ska finnas följande:
 -   Sportidentbrickor för folk som glömt
 
 
-<a id="org79febe7"></a>
+<a id="org5259c2d"></a>
 
 ## ROC
 
@@ -58,13 +58,11 @@ Om man har en ROC vid start så ska den vara testad innan och enheterna anslutna
 Programmera enheterna med unika nummer och den funktion de ska ha (Start, Check, Kontroll etc), så att man kan härleda i OLA vilken enhet som löparen varit vid.
 
 
-<a id="org4183c6c"></a>
+<a id="orgae6ecc9"></a>
 
 ## Efterarbete
 
 Starten ska pricka av alla löpare som går in i fållan för intervallstart. Denna lista (minutlistan) skall efter att alla ha startat lämnas tillbaks till sekretariatet så att man kan rensa löpare som inte startat (Kvar i skogen).
 
-[Start](https://sdaaish.github.io/OL-event/index.html)
-[Start2](./index.md)
-[Start3](./README.md)
+[Start](./index.md)
 

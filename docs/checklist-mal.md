@@ -2,10 +2,10 @@
 <h2>Inneh&aring;ll</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orgec008c8">1. Förberedelser</a>
+<li><a href="#org5ac981e">1. Förberedelser</a>
 <ul>
-<li><a href="#org4821011">1.1. Utrustning</a></li>
-<li><a href="#org6771ff3">1.2. Tält</a></li>
+<li><a href="#org7db6a0f">1.1. Utrustning</a></li>
+<li><a href="#orga8b0a59">1.2. Tält</a></li>
 </ul>
 </li>
 </ul>
@@ -16,14 +16,14 @@
 </div>
 
 
-<a id="orgec008c8"></a>
+<a id="org5ac981e"></a>
 
 # Förberedelser
 
 Att ha ett tält vid målgången är praktiskt, speciellt vid regn eller blåst. Samma tält kan användas till både direktanmälan och avläsning av löparbrickor.
 
 
-<a id="org4821011"></a>
+<a id="org7db6a0f"></a>
 
 ## Utrustning
 
@@ -41,13 +41,11 @@ Att ha ett tält vid målgången är praktiskt, speciellt vid regn eller blåst.
 -   Röd utgång behöver en egen dator med master
 
 
-<a id="org6771ff3"></a>
+<a id="orga8b0a59"></a>
 
 ## Tält
 
 Det är ofta soligt på tävlingsplatsen. Detta gör att bilden syns dåligt på bildskärmarna. Att ha ett tält är praktiskt för detta, det det både ger skugga, men även skyddar mot blåst och regn. Kan delas med direktanmälan.
 
-[Start](https://sdaaish.github.io/OL-event/index.html)
-[Start2](./index.md)
-[Start3](./README.md)
+[Start](./index.md)
 

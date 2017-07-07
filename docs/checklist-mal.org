@@ -35,6 +35,5 @@ Att ha ett tält vid målgången är praktiskt, speciellt vid regn eller blåst.
  Det är ofta soligt på tävlingsplatsen. Detta gör att bilden syns dåligt på bildskärmarna. Att ha ett tält är praktiskt för detta, det det både ger skugga, men även skyddar mot blåst och regn. Kan delas med direktanmälan.
 
 
-[[https://sdaaish.github.io/OL-event/index.html][Start]]
-[[./index.md][Start2]]
-[[./README.md][Start3]]
+[[./index.md][Start]]
+

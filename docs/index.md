@@ -47,5 +47,5 @@ Kanske ska välja språk för repot&#x2026;.
 -   [Files](https://github.com/sdaaish/OL-event/)
 -   [Installation](https://github.com/sdaaish/OL-event/blob/master/INSTALL.md)
 
-[About this site](https://github.com/sdaaish/OL-event/about.html)
+[About this site](https://sdaaish.github.io/OL-event/about.html)
 
