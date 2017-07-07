@@ -11,3 +11,5 @@ Saker som är bra att ha med sig på tävling.
 - Tejp transparent
 - Grendosa
 - Förlängningskabel
+
+[Start](./index.html "Tillbaks till start")
