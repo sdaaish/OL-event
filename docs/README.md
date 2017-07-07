@@ -6,6 +6,11 @@ Repot heter ```OL-event``` och är avsett för både OLA, MeOS m fl.
 ### Todo
 Kanske ska välja språk för repot....
 
+### info
+[saker.md]
+
 ### Links
 - [Files](https://github.com/sdaaish/OL-event/)
 - [Installation](https://github.com/sdaaish/OL-event/blob/master/INSTALL.md)
+
+[about.md]
