@@ -33,7 +33,7 @@ if exist "C:\Program Files\MYSQL\bin\mysqldump.exe" (
 )
 
 if not defined $BKPCMD (
-   echo No program exists for mysqldump
+   echo No program exists for mysqldump (mysqldump.exe), exiting!
    exit /b 1
 )
 
