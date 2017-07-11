@@ -6,9 +6,9 @@
 - For utilities regarding OL events, OLA and MeOS see [INSTALL](INSTALL.md)
 - To download the files, see https://github.com/sdaaish/OL-event/releases
 
-### MariaDB-backup.cmd
-Takes a backup of a MariaDB with regular intervals.
-https://github.com/sdaaish/OL-event/blob/master/MariaDB-backup.cmd
+### MariaDB/MySQLDB-backup
+Takes a backup of a MariaDB or MySQL database with regular intervals.
+<mysqldb-backup.cmd>
 
 ## Backup and restore tips
 
