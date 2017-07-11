@@ -1,6 +1,6 @@
 @echo off
 
-:: Backupscript for databases that use MariaDB.
+:: Backupscript for databases that use MariaDB or MySQL.
 :: Uses mysqldump and 7-Zip.
 :: 2016-08-20/SDAA
 
@@ -8,19 +8,41 @@
 :: Change settings for user, password, directory and possible path to EXE-file.
 :: If you use another compressing program, change ZIPOPT and ZIPEXT to.
 setlocal
-set $BKPCMD="C:\Program Files\MariaDB 10.1\bin\mysqldump.exe"
+
 set $ZIP="C:\Program Files\7-zip\7z.exe"
 set $ZIPOPT=-sdel a
 set $ZIPEXT=.7z
 set $DIR=C:\local\data
 set $USER=root
 
+:: Find out what version of mysqldump to be used
+:: MariaDB ver 10.2, 10.1 or MYSQL-version.
+if exist "C:\Program Files\MariaDB 10.2\bin\mysqldump.exe" (
+   set $BKPCMD="C:\Program Files\MariaDB 10.2\bin\mysqldump.exe"
+   goto main
+)
+
+if exist "C:\Program Files\MariaDB 10.1\bin\mysqldump.exe" (
+   set $BKPCMD="C:\Program Files\MariaDB 10.1\bin\mysqldump.exe"
+   goto main
+)
+
+if exist "C:\Program Files\MYSQL\bin\mysqldump.exe" (
+   set $BKPCMD="C:\Program Files\MYSQL\bin\mysqldump.exe"
+   goto main
+)
+
+if not defined $BKPCMD (
+   echo No program exists for mysqldump
+   exit /b 1
+)
+
 :: ### Start of program ###
 :main
 
 ::Welcome text
 cls
-echo This program backups the MariaDB and puts the files in %$DIR%.
+echo This program backups the MySQL and puts the files in %$DIR%.
 echo You need to provide a password for the DB-account used.
 echo The program will run until it is stopped with CTRL-C.
 echo: 
@@ -42,7 +64,7 @@ cd %$DIR%
 call :sub_time
 
 :: Set filename to directory with date and time in name.
-set $FILE=%$DIR%\mariadb-backup-%$Datum%-%$Tid%.sql
+set $FILE=%$DIR%\sqldb-backup-%$Datum%-%$Tid%.sql
 set $ZIPFILE=%$FILE%%$ZIPEXT%
 ::echo The file %$FILE%
 
@@ -94,14 +116,14 @@ set $Year=%Date:~0,4%
 set $Datum=%$Year%%$Mth%%$Day%
 
 :: Set time
-set $Timma=%Time:~0,2%
+set $Hour=%Time:~0,2%
 :: Strip spaces from timma, if any
-set $Timma=%$Timma: =%
+set $Hour=%$Hour: =%
 :: Ensure the hours have a leading zero
-if 1%$Timma% LSS 20 Set $Timma=0%$Timma%
-set $Minut=%Time:~3,2%
-set $Sekund=%Time:~6,2%
-set $Tid=%$Timma%%$Minut%%$Sekund%
+if 1%$Hour% LSS 20 Set $Hour=0%$Hour%
+set $Minute=%Time:~3,2%
+set $Second=%Time:~6,2%
+set $Tid=%$Hour%%$Minute%%$Second%
 ::echo %$Tid%
 exit /b
 
