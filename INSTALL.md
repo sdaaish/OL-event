@@ -14,7 +14,7 @@ http://roc.olresultat.se/ver6.4/roc.asp?ActiveMenu=ROC_list&language=svenska
 
 #### Liveresultat
 - Emma clientprogramvara 
-https://emmaclient.codeplex.com/releases/view/627774
+[Liveresults](https://github.com/petlof/liveresults)
 #### MeOS liveresultat
 - http://melin.nu/meos/sv/onlineresults.php
 #### Live på Eventor
