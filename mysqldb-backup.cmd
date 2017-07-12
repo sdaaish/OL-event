@@ -16,7 +16,7 @@ set $DIR=C:\local\data
 set $USER=root
 
 :: Find out what version of mysqldump to be used
-:: MariaDB ver 10.2, 10.1 or MYSQL-version.
+:: MariaDB ver 10.2, 10.1 or MYSQL-version 5.7, 5.6 or 5.5.
 if exist "C:\Program Files\MariaDB 10.2\bin\mysqldump.exe" (
    set $BKPCMD="C:\Program Files\MariaDB 10.2\bin\mysqldump.exe"
    goto main
@@ -27,8 +27,18 @@ if exist "C:\Program Files\MariaDB 10.1\bin\mysqldump.exe" (
    goto main
 )
 
-if exist "C:\Program Files\MYSQL\bin\mysqldump.exe" (
-   set $BKPCMD="C:\Program Files\MYSQL\bin\mysqldump.exe"
+if exist "C:\Program Files\MySQL\MySQL Server 5.7\bin\mysqldump.exe" (
+   set $BKPCMD="C:\Program Files\MySQL\MySQL Server 5.7\bin\mysqldump.exe"
+   goto main
+)
+
+if exist "C:\Program Files\MySQL\MySQL Server 5.6\bin\mysqldump.exe" (
+   set $BKPCMD="C:\Program Files\MySQL\MySQL Server 5.6\bin\mysqldump.exe"
+   goto main
+)
+
+if exist "C:\Program Files\MySQL\MySQL Server 5.5\bin\mysqldump.exe" (
+   set $BKPCMD="C:\Program Files\MySQL\MySQL Server 5.6\bin\mysqldump.exe"
    goto main
 )
 
@@ -84,6 +94,7 @@ if not %ERRORLEVEL%==0 call :sub_zip
 echo Compressed Backup in file %$ZIPFILE%
 
 :: Loop the script after %$INTERVAL% seconds
+:loop
 echo Sleeping for %$INTERVAL% seconds.
 ping -n %$INTERVAL% 127.0.0.1 >NUL
 goto begin
@@ -105,7 +116,7 @@ goto eof
 :sub_zip
 echo No 7-zip detected or error compressing file.
 echo The file remains uncompressed
-exit /b
+goto loop
 
 :: Date/Time setting
 :sub_time
