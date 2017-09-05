@@ -33,6 +33,9 @@ https://www.sportident.com/products.html#software
 - Utilities på OLResultat 
 http://olresultat.se/blog/?page_id=399
 Bland annat ta bort för många COM-portar.
+- OCAD viewer. Bra för att exportera kart-filer
+https://www.ocad.com/en/downloads/ocad-viewer
+
 ## TODO
 <!---
 Convert to org-mode
