@@ -1,4 +1,4 @@
-## Files to install that are useful to OL-events.
+## Software to install that are useful to OL-events.
 
 ### OLA
 - OLA
@@ -12,6 +12,7 @@ http://www.melin.nu/meos/sv/download.php
 - ROC
 http://roc.olresultat.se/ver6.4/roc.asp?ActiveMenu=ROC_list&language=svenska
 
+### Webpages
 #### Liveresultat
 - Emma clientprogramvara 
 [Liveresults](https://github.com/petlof/liveresults)
@@ -33,7 +34,7 @@ https://www.sportident.com/products.html#software
 - Utilities på OLResultat 
 http://olresultat.se/blog/?page_id=399
 Bland annat ta bort för många COM-portar.
-- OCAD viewer. Bra för att exportera kart-filer
+- OCAD viewer. Bra för att exportera ocad-filer till Livelox.
 https://www.ocad.com/en/downloads/ocad-viewer
 
 ## TODO
