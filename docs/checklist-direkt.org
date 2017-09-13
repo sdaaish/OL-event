@@ -14,7 +14,7 @@
 #+CREATOR: Emacs 25.1.1 (Org mode 9.0.9)
 #+END_OPTIONS
 
-** Föreberedelser
+** Förberedelser
 - Dator
 - Master-enhet för avläsning av brickor för anmälan
 - Clear-enhet
@@ -31,7 +31,7 @@
 - Definitioner
 ** Tips
 *** Masterenhet
- En Master-enhet bör vara programmerad som Mål för att kunna läsa av brickor enklast/snabbast. Alternativt ReadOut, men detta kan krångla ibland.
+- En Master-enhet bör vara programmerad som Mål för att kunna läsa av brickor enklast/snabbast. Alternativt ReadOut, men detta kan krångla ibland.
 
 *** Tält
  Det är ofta soligt på tävlingsplatsen. Detta gör att bilden syns dåligt på bildskärmarna. Att ha ett tält är praktiskt för detta, det det både ger skugga, men även skyddar mot blåst och regn. Kan delas med målavläsningen.
