@@ -21,27 +21,33 @@ flowchart LR
 
       subgraph VLAN21 [VLAN1]
         style VLAN21 fill:#4169e1
-        PX1[P1] --- M[Modem]
+        PX1[P1]
+        PX2[P2]
+        PX3[P3]
+
       end
 
       subgraph VLAN22 [VLAN2]
         style VLAN22 fill:#4169e1
+        PX4[P4] --- M[Modem]
         PX5[P5]
       end
 
-      PX2[P2]
-      PX3[P3]
-      PX4[P4]
     end
-
-    B(Unifi) ---|Eth| C3
-    O(OLA) ---|Eth| S1
+    subgraph Services
+        style Services fill:#ddd,color:black
+      B(Unifi)
+      O(OLA)
+      L(Live resultat)
+      classDef Sclass fill:#999,color:black;
+      class B,O,L Sclass;
+    end
 
     subgraph Switch
       style Switch fill:#7fffd4,color:#000
       direction TB
-      P8 --- PX1
-      P7 --- PX5
+      P8 --- PX5
+      P7 --- PX1
 
       subgraph Ports [Port Overview]
         style Ports fill:#66cdaa,color:#000
@@ -83,7 +89,10 @@ flowchart LR
     style Ethernet fill:#6495ed,color:#000
     C3(Computer) ---|Eth| P1
     C4(Computer) ---|Eth| P2
+    B --- C3
     S1(Server) ---|Eth| P3
+    O --- S1
+    L --- C4
     classDef Eclass fill:#4169e1,stroke:#333,stroke-width:4px,color:#000;
     class C3,C4,S1 Eclass;
     end
