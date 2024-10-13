@@ -18,7 +18,7 @@ flowchart LR
       class Internet Large;
     end
 
-    subgraph ER [Edge Router X\n]
+    subgraph ER [Edge Router X`n]
       style ER fill:#6495ed,color:black
 
       subgraph Ports1 [Port Overview]
